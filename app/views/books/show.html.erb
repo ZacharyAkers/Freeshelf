@@ -1,8 +1,5 @@
-<%= @book.title %>
-<%= @book.author %>
-<%= @book.description %>
-<%= @book.url %>
-<br>
-
-<%= link_to "edit", edit_book_path(@book) %>
+<h1><%= @book.title %></h1>
+<p><strong>Author:</strong> <%= @book.author %><p>
+<p><strong>Description:</strong> <%= @book.description %><p>
+<p><strong>URL:</strong> <%= @book.url %><p>
 <%= link_to "Back", books_path %>
